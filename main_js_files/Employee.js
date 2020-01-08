@@ -17,29 +17,29 @@ class Employee {
     }
     // handy-dandy constructor which defines the properties of the object "employee"
 
-    getName(){
-        console.log(`This employee's name is ${this.name}.`);
-    }
+        getName(){
+            return e.name;
+        }
 
-    getId(){
-        console.log(`Their ID is: ${this.id}`);
-    }
+        getId(){
+            return e.id;
+        }
 
-    getEmail(){
-        console.log(`Their email address is: ${this.email}`);
-    }
+        getEmail(){
+            return e.email;
+        }
 
-    getRole(){
-        console.log(`${Employee}`);
-    }
+        getRole(){
+            return "Employee";
+        }
 }
 
-const alice = new Employee("Alice", 1, "alice@gmail.com");
+const e = new Employee("Alice", 100, "test@test.com");
 
-alice.getName();
-alice.getId();
-alice.getEmail();
-alice.getRole();
+e.getName();
+e.getId();
+e.getEmail();
+e.getRole();
 
 
 module.exports = Employee;
