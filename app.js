@@ -19,9 +19,33 @@ function mainApp() {
     // create a manager
     inquirer    
         .prompt([
+            {
+            type: "input",
+            message: "What is your manager's name?",
+            name: "managerName"
+            },
+            {type: "input",
+            message: "What is your manager's id?",
+            name: "managerId"
+
+            },
+            {type: "input",
+            message: "What is your manager's email?",
+            name: "managerEmail"
+
+            },
+            {type: "input",
+            message: "What is your manager's office number?",
+            name: "managerNumber"
+
+            },
         
         ])
         .then(answers =>{
+            const {managerName, managerId, managerEmail, managerNumber} = answers;
+            const managerObj = newManager(managerName, managerId, managerEmail, managerNumber);
+            const managerCard = managerCard(managerObj);
+            teamMember.push(managerCardhtml);
             
         })
 
