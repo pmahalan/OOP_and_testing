@@ -1,14 +1,14 @@
 // const Employee = require("./lib/Employee");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
-const Manager = require("./lib/Manager");
+const Engineer = require("./main_js_files/Engineer");
+const Intern = require("./main_js_files/Intern");
+const Manager = require("./main_js_files/Manager");
 const path = require("path");
 const inquirer = require("inquirer")
 const fs = require("fs");
-const engineerCard = require("./htmlRender/engineerCard");
-const internCard = require("./htmlRender/internCard");
-const managerCard = require("./htmlRender/managerCard");
-const mainRender = require("./htmlRender/mainRender");
+const engineerCard = require("./render_cards/engineerCard");
+const internCard = require("./render_cards/internCard");
+const managerCard = require("./render_cards/managerCard");
+const mainRender = require("./render_cards/mainRender");
 
 
 const outputPath = path.resolve(__dirname, "output", "team.html");
