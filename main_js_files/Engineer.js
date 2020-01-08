@@ -11,13 +11,13 @@
 const Employee = require("./Employee");
 
 class Engineer extends Employee {
-    constructor(ghname) {
-        super("Foo", 1, "test@test.com");
+    constructor(name, id, email, ghname) {
+        super(name, id, email);
         this.ghname = ghname;
     }
 
     getGithub() {
-        return en.ghname;
+        return this.ghname;
     }
 
     getRole(){
@@ -25,10 +25,6 @@ class Engineer extends Employee {
     }
 
 }
-
-const en = new Engineer("GitHubUser");
-
-en.getGithub();
 
 module.exports = Engineer
 

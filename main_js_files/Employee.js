@@ -18,28 +18,20 @@ class Employee {
     // handy-dandy constructor which defines the properties of the object "employee"
 
         getName(){
-            return e.name;
+            return this.name;
         }
 
         getId(){
-            return e.id;
+            return this.id;
         }
 
         getEmail(){
-            return e.email;
+            return this.email;
         }
 
         getRole(){
             return "Employee";
         }
 }
-
-const e = new Employee("Alice", 100, "test@test.com");
-
-e.getName();
-e.getId();
-e.getEmail();
-e.getRole();
-
 
 module.exports = Employee;
