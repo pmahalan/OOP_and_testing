@@ -1,7 +1,4 @@
 
-// create a function that holds the html that will output the main body of the html and will take in the data from the other cards
-function mainRender(data){
-    return `
     <!DOCTYPE html>
     <html lang="en">
     
@@ -27,15 +24,25 @@ function mainRender(data){
         <div class="container">
             <div class="row">
                 <div class="team-area col-12 d-flex justify-content-center">
-                    ${data.join("")}
+                    
+    <div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">asdf</h2>
+        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: 54</li>
+            <li class="list-group-item">Email: <a href="mailto:asdfasdf">asdfasdf</a></li>
+            <li class="list-group-item">Office number: aasdf</li>
+        </ul>
+    </div>
+</div>
+    
+    
                 </div>
             </div>
         </div>
     </body>
     
     </html>
-`
-}
-// export mainRender
-
-module.exports = mainRender
